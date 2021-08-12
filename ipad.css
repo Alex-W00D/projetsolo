@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black */
+  }
+
+@media all and (max-width: 480px){
+    body {
+        
+        display: block;
+        width: 480px;
+        height: 1100px;
+              
+        }
+
+        .page {
+        position: relative;
+        display: block;
+        flex-direction: column;
+        border-color: transparent;
+        width: auto;
+        height: auto;
+        background-image: url(./SVG/fondentier.svg);
+        background-size: 100% 100%;
+        }
+        
+        .contact{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin-left: 350px;
+            margin-top: 60px;
+            
+                }
+          
+        .contact a{
+            color: black;
+            margin-bottom: 10px;
+            
+        }  
+
+        .infophoto {
+            
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: 180px;     
+                  
+            }
+
+            .photo{
+            display: flex;    
+            width: auto;
+            }
+
+            .img {
+                display: flex;
+                width: 70%;
+           
+            }
+
+            .nom {
+                display: block;
+                height: 180px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;        
+                    
+            }   
+
+            .adresse{
+            
+            display: none;
+            }
+
+                .info{
+                    display: none;
+                }
+
+        .titre{
+            width: 70%;
+            height: 100px;
+            display: flex;
+            margin-top: -110px;
+            margin-left: -300px;            
+        }
+        
+        .metier{
+            width: 350px;
+            margin-left: 325px;
+            position: absolute;
+            
+            
+        }
+
+                .cv{
+                    display: none;
+                }
+
+                .section1{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 410px;
+                    
+                }
+            
+                .barre{
+                    display: flex;
+                    height: 180px;
+                    margin-top: 130px;
+                    opacity: 0.7;
+                }
+            
+                .barre2{
+                    display: flex;
+                    height: 180px;
+                    margin-top: 30px;
+                    opacity: 0.7;
+
+                }
+
+            .section1 .colgauche .txtexp{
+                display: inline;
+                margin-left: -290px;
+                margin-top: 50px;
+                font-size: 80%;
+            
+        }
+
+            .txtform{
+                    
+                    display: flex;
+                    margin-left: 10px;
+                    margin-top: 250px;
+                    font-size: 80%;  
+                }
+
+                .txtform2{
+                    display: flex;
+                    writing-mode: vertical-lr;
+                    text-orientation: upright;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    font-size: 80%;
+                    margin-top: -280px;
+                    margin-left: 30px;
+                }
+                         
+                .section2{
+                    display: flex;
+                    flex-direction: column;
+                    width: 410px;
+                }
+
+                .experience{
+                    display: flex;
+                    max-width: 80%;
+                    margin-left: -20px;     
+                    
+                }
+
+                .formation{
+                    display: flex;
+                    max-width: 50%;
+                    margin-left: 40px;
+                    margin-top: -5px;
+                }
+
+                .competences{
+                    display: flex;
+                    width: 70%;
+                    margin-top: 200px;
+                    margin-left: 35px;
+                   
+                    
+                }
+
+        .colgauche{
+            position: relative;
+            width: auto;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .coldroite{
+            width: auto;
+
+        }
+
+        .colgauche2{
+            width: 110%;
+            position: relative;
+            display: flex;
+            margin-top: -30px;
+            margin-left: 0px;
+        }
+
+        .coldroite2{
+            position: relative;
+            width: auto;
+        }
+
+                    .hobbies{
+                        display: none;
+                     }
+
+                        .langues{
+                            display: none;
+                         }
+
+                    .dernierbloc{
+                            display: none;
+                            width: 99%;
+                                                        
+                    }
+
+                                  
+                   
+
+                    br{
+                        display: inline;}
+
+                    nav{
+                        display: flex;
+                    }
+                }                 
+    
+                
