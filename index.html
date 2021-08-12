@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-ProjetSolo</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" media="all and (max-width: 700px)" href="tablette.css" type="text/css" />
+    <link rel="stylesheet" media="all and (max-width: 414px)" href="smartphone.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/ad07d8a7c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+        .box {
+          background-color: transparent;
+          width: 400px;
+          height: 100px;
+          border: 1px solid transparent;
+          perspective: 1000px;    
+          
+        }
+
+        .box-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin-left: 10px;
+          text-align: center;
+          transition: transform 2s;
+          transform-style: preserve-3d;
+          
+        }
+
+        .box:hover h2{
+            visibility: hidden;
+        }
+
+        .box:hover .box-inner {
+          transform: rotateY(180deg);
+        }
+        .box-front, .box-back {
+          position: absolute;
+          backface-visibility: hidden;
+        }
+  
+        .box-front {
+          display: flex;
+          background-color: transparent;
+          color: #111111;
+          width: 100%;
+          height: 25%;
+          
+          
+        }
+  
+        .box-back {
+          background-color: transparent;
+          color: #eeeeee;
+          transform: rotateY(180deg);
+          width: 80%;
+          height: 30%;
+        }
+  
+        .fas{
+            
+            font-size: 30px;
+                  
+        }
+  
+        h1,h2,h3,h4,h5{
+            position: absolute;
+            color: black;
+            text-transform: uppercase;
+            margin-left: 100px;
+            font-size: 25px;
+        }
+  
+      </style>
+  
+</head>
+<body>
+    
+    <div class="page">
+        <div class="contact">
+            <a href="mailto:martin@johnson.com"><i class="fas fa-envelope"></i></a>
+            <a href="gamebymartin.com" target="_blank"><i class="fas fa-at"></i></a>
+            <a href="tel:+33700000000"><i class="fas fa-phone-square-alt"></i></a>
+        </div>
+    
+<!-- une div infophoto avec à l'intérieur 3 div : gauche photo - milieu nom et adresse - droite email-->        
+        <div class="infophoto">
+            
+            
+            <div class="photo">
+                <img class="img" 
+                src="photo.svg"                 
+                alt="photocv"/>
+                
+            </div>
+
+            <div class="nom">
+                <a href=""></a>
+               <img class="martin" 
+                src="svg/nom.svg" alt="nom"
+                /> 
+                <p class="adresse">
+                25 rue des mésanges <br/>
+                    Bat.A Appt.112<br/>
+                    33000 Bordeaux
+                </p>
+
+            </div>
+
+            <div class="info">
+                <img class="email"
+                src="email.svg" alt="adressemail" 
+                style="width: 250px;height: 250px;" />
+                
+            </div>
+            
+
+        </div>
+
+<!-- une div sur toute la largeur et y intégrer le logo metier-->
+        <div class="titre">
+            <img class="metier" alt="titremetier"
+            src="metier.svg" />
+
+            <div class="cv">
+                <a href="cv_projet_pdf.pdf" target="_blank" download="cv_projet_pdf">telecharger mon cv</a>
+            </div>
+
+        </div>
+
+        
+
+        <br/><br/><br/>
+
+
+
+<!--une div contenant deux blocs-->      
+
+        <div class="section1">
+
+         
+         
+            <!-- barre verticale test-->
+            <hr class="barre">
+
+            <div class="colgauche">
+                <img class="experience"
+                src="svg/experience.svg" alt="exp">
+                <p class="txtexp"> experiences </p>
+
+
+
+                
+            
+            </div>
+
+            <div class="coldroite">
+
+                <img class="competences"
+                src="svg/competences.svg" alt="comp">
+                
+            </div>
+
+        </div>
+
+<!-- une div contenant encore deux blocs -->
+
+        <div class="section2">
+            <!-- barre verticale test-->
+            <hr class="barre2">
+
+            <div class="colgauche2">
+                <img class="formation"
+                src="svg/formation.svg" alt="for">
+                <p class="txtform"> formation </p>
+
+            </div>
+
+            <div class="coldroite2">
+                
+                <img class="hobbies"
+                src="svg/hobbies.svg" alt="hob">
+                
+                <img class="langues"
+                src="svg/langues.svg" alt="lng">
+
+            </div>
+
+        </div>
+        
+<!-- dernier bloc contenant 4 icones + texte importé -->
+
+        <div class="dernierbloc">
+            <img class="texte"
+                src="svg/texte.svg" alt="txt">
+            
+
+        </div>
+    
+        </div>        
+    </div>
+
+<script src="panneau.js"></script>
+</body>
+</html>

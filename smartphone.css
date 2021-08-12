@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black */
+  }
+
+@media all and (max-width: 414px){
+    body {
+        
+        display: block;
+        width: 414px;
+        height: 1100px;
+              
+        }
+    }
+
+    @media all and (max-width: 414px){
+    
+        .page {
+        position: relative;
+        display: block;
+        flex-direction: column;
+        border-color: transparent;
+        width: auto;
+        height: auto;
+        background-image: url(./SVG/fondentier.svg);
+        background-size: 100% 100%;
+                  
+        }
+
+        
+        .contact{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin-left: 350px;
+            margin-top: 60px;
+            
+                }
+          
+        .contact a{
+            color: black;
+            margin-bottom: 10px;
+            
+        }  
+    }
+
+    @media all and (max-width: 414px){
+        .infophoto {
+            
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: 180px;     
+                  
+            }
+        
+        }
+
+    @media all and (max-width: 414px){
+  
+            .photo{
+            display: flex;    
+            width: auto;
+            }
+        
+        }
+
+    @media all and (max-width: 414px){
+
+            .img {
+                display: flex;
+                width: 70%;
+           
+            }
+        }
+    
+    @media all and (max-width: 414px){
+  
+            .nom {
+                display: block;
+                height: 180px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;        
+                    
+            }   
+        
+        }
+
+    @media all and (max-width: 414px){
+
+            .adresse{
+            
+            display: none;
+            }
+            
+            }
+
+    @media all and (max-width: 414px){
+                .info{
+                    display: none;
+                }
+            }
+
+    @media all and (max-width: 414px){
+        .titre{
+            width: 70%;
+            height: 100px;
+            display: flex;
+            margin-top: -110px;
+            margin-left: -300px;            
+        }
+        
+        .metier{
+            width: 350px;
+            margin-left: 325px;
+            position: absolute;
+            
+            
+        }
+
+                .cv{
+                    display: none;
+                }
+
+            }
+
+    @media all and (max-width: 414px){
+
+                .section1{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 410px;
+                    
+                }
+            
+                .barre{
+                    display: flex;
+                    height: 180px;
+                    margin-top: 130px;
+                    opacity: 0.7;
+                }
+            
+                .barre2{
+                    display: flex;
+                    height: 180px;
+                    margin-top: 30px;
+                    opacity: 0.7;
+
+                }
+            }
+
+    @media all and (max-width: 414px){
+            
+            .section1 .colgauche .txtexp{
+                display: inline;
+                margin-left: -290px;
+                margin-top: 50px;
+                font-size: 80%;
+            
+        }
+
+            .colgauche2 .txtform{
+                    position: absolute;
+                    display: none;
+                    margin-left: 10px;
+                    margin-top: -150px;
+                    font-size: 80%;  
+                }
+
+                .txtform2{
+                    display: flex;
+                    writing-mode: vertical-lr;
+                    text-orientation: upright;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    font-size: 80%;
+                    margin-top: -280px;
+                    margin-left: 30px;
+                }
+                         
+            }
+
+    @media all and (max-width: 414px){
+
+                .section2{
+                    display: flex;
+                    flex-direction: column;
+                    width: 410px;
+                }
+
+                .experience{
+                    display: flex;
+                    max-width: 80%;
+                    margin-left: -20px;     
+                    
+                }
+
+                .formation{
+                    display: flex;
+                    max-width: 50%;
+                    margin-left: 40px;
+                    margin-top: -5px;
+                }
+
+                .competences{
+                    display: flex;
+                    width: 70%;
+                    margin-top: 200px;
+                    margin-left: 35px;
+                   
+                    
+                }
+            
+            }
+
+    @media all and (max-width: 414px){
+        .colgauche{
+            position: relative;
+            width: auto;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+    }
+    
+    @media all and (max-width: 414px){
+        .coldroite{
+            width: auto;
+
+        }
+    }
+
+    @media all and (max-width: 414px){
+        .colgauche2{
+            width: 110%;
+            position: relative;
+            display: flex;
+            margin-top: -30px;
+            margin-left: 0px;
+        }
+    }
+
+    @media all and (max-width: 414px){
+        .coldroite2{
+            position: relative;
+            width: auto;
+        }
+    }
+
+    @media all and (max-width: 414px){
+        
+
+    }
+
+
+    @media all and (max-width: 414px){
+
+                    .hobbies{
+                        display: none;
+                     }
+                    
+                    }
+
+    @media all and (max-width: 414px){
+
+                        .langues{
+                            display: none;
+                         }
+                        
+                    }
+
+    @media all and (max-width: 414px){
+
+                    .dernierbloc{
+                            display: none;
+                            width: 99%;
+                                                        
+                    }
+
+                                  
+                   
+
+                    br{
+                        display: inline;}
+
+                    nav{
+                        display: flex;
+                    }
+                }                 
+    
+                

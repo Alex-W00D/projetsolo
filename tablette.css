@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+@media all and (max-width: 700px){
+    body {
+        
+        display: block;
+        width: 699px;
+        height: 1100px;
+              
+        }
+    }
+
+    @media all and (max-width: 700px) {
+    
+        .page {
+        display: block;
+        flex-direction: column;
+        border-color: transparent;
+        width: 699px;
+        height: 1100px;
+        background: url(svg/fondentier.svg);
+        background-repeat: no-repeat;         
+            
+        }
+
+        .contact{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            margin-left: 300px;
+            margin-top: 100px;
+            letter-spacing: 15px;
+            
+    }
+
+        .contact a{
+            color: black;
+        }
+
+    @media all and (max-width: 700px){
+        .infophoto {
+            
+            display: flex;
+            width: 699px;
+            height: 180px;
+            margin: auto;
+            
+                  
+            }
+        }
+
+    @media all and (max-width: 700px) {
+  
+            .photo{
+            display: flex;    
+            width: 220px;
+            height: 180px;
+            align-items: center;
+        
+            }
+        
+        }
+
+    @media all and (max-width: 700px) {
+
+            .img {
+                display: flex;
+                width: auto;
+                margin: auto;
+                
+                     
+                
+            }
+        }
+    
+    @media all and (max-width: 700px) {
+
+            .nom {
+                display: flex;
+                height: 180px;
+                width: 80%;
+                margin-top: -20px;        
+                    
+            }   
+        
+        }
+
+    @media all and (max-width: 700px){
+
+            .adresse{
+            
+            display: none;
+            }
+            
+            }
+
+    @media all and (max-width: 700px){
+                .info{
+                    display: none;
+                }
+            }
+
+    @media all and (max-width: 700px){
+                .titre{
+                    position:absolute;
+                    display: flex;
+                    margin-top: -200px;
+                    margin-left: -200px;
+                    
+                }
+                
+                .titre .metier{
+                    display: block;
+                    align-items: center;                   
+                }
+
+                .cv{
+                    display: none;
+                }
+            }
+
+            .barre{
+                display: flex;
+                height: 220px;
+                margin-top: 160px;
+                opacity: 0.7;
+            }
+        
+            .barre2{
+                display: flex;
+                height: 280px;
+                margin-top: 110px;
+                opacity: 0.7;
+
+            }
+        
+
+@media all and (max-width: 700px){
+        
+        .colgauche{
+            width: 50%;
+            margin-top: 100px;
+        }
+        
+
+        .txtexp{
+            display: flex;
+            margin-left: -290px;
+            margin-top: 70px;
+            font-size: 80%;
+        
+    }
+
+        .txtform{
+                position: absolute;
+                display: flex;
+                margin-left: 10px;
+                margin-top: -150px;
+                font-size: 80%;  
+            }
+
+                     
+        }
+
+@media all and (max-width: 700px){
+
+            .section2{
+                display: flex;
+                flex-direction: column;
+                width: 410px;
+            }
+
+            .experience{
+                display: flex;
+                max-width: 60%;
+                margin-left: 30px;
+                margin-top: -100px;     
+                
+            }
+
+            .formation{
+                display: flex;
+                max-width: 60%;
+                margin-left: 10px;
+                margin-top: 80px;
+            }
+
+            .competences{
+                display: flex;
+                width: 60%;
+                margin-top: 150px;
+                margin-left: -180px;
+                               
+            }
+
+            .hobbies{
+                position: absolute;
+                display: flex;
+                width: 40%;
+                margin-top: -550px;
+                margin-left: 350px;
+            }
+
+            .langues{
+                position: absolute;
+                display: flex;
+                width: 40%;
+                margin-top: -370px;
+                margin-left: 350px;
+            }
+
+            .dernierbloc{
+                width: 100%;
+                margin-top: 30px;
+            }
+
+        }
