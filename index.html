@@ -29,7 +29,8 @@ body{
     background: url(svg/fondentier.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1080px 1910px;     
+    background-size: 1080px 1910px;
+         
               
 }
 
@@ -92,15 +93,21 @@ body{
     height: 300px;
     float: right;
     text-align: center;
+    animation:bounce-in-top 3s both}
+
+ @keyframes bounce-in-top{0%{transform:translateY(-500px);animation-timing-function:ease-in;opacity:0}38%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateY(-65px);animation-timing-function:ease-in}72%{transform:translateY(0);animation-timing-function:ease-out}81%{transform:translateY(-28px);animation-timing-function:ease-in}90%{transform:translateY(0);animation-timing-function:ease-out}95%{transform:translateY(-8px);animation-timing-function:ease-in}100%{transform:translateY(0);animation-timing-function:ease-out}}
+
             
+
+
     
-}
+
 
 .email{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 35px
 }
+
 
 
 .titre{
@@ -320,10 +327,15 @@ br{
             margin-top: 100px;
             letter-spacing: 15px;
             
-    }
+            animation: clignote 4s linear infinite;
+            }
+            @keyframes clignote {  
+            50% { opacity: 0; }
+            }
+    
 
         .contact a{
-            color: black;
+            color: rgb(255, 60, 0);
             font-size: xx-large;
         }
 
@@ -385,8 +397,11 @@ br{
                 
                 .titre .metier{
                     display: block;
-                    align-items: center;                   
+                    align-items: center;
+                    animation:scale-in-hor-left 3s cubic-bezier(.25,.46,.45,.94) both;                
                 }
+
+@keyframes scale-in-hor-left{0%{transform:scaleX(0);transform-origin:0 0;opacity:1}100%{transform:scaleX(1);transform-origin:0 0;opacity:1}}
 
                 .cv{
                     display: none;
@@ -524,11 +539,17 @@ br{
             flex-direction: column;
             margin-left: 350px;
             margin-top: 40px;
+            color:green;
+            animation: clignote 4s linear infinite;
+            }
+            @keyframes clignote {  
+            50% { opacity: 0; }
+            }
             
-                }
+        
           
         .contact a{
-            color: black;
+            color: rgb(255, 102, 0);
             margin-bottom: 10px;
             font-size: x-large;
             margin-left: 50px;
@@ -755,9 +776,9 @@ br{
             </div>
 
             <div class="info">
-                <img class="email"
+                <a href="mailto:martin@johnson.com"><img class="email"
                 src="email.svg" alt="adressemail" 
-                style="width: 250px;height: 250px;" />
+                style="width: 250px;height: 250px;" /></a>
                 
             </div>
             
