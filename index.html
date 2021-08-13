@@ -5,77 +5,776 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-ProjetSolo</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" media="all and (max-width: 700px)" href="tablette.css" type="text/css" />
-    <link rel="stylesheet" media="all and (max-width: 414px)" href="smartphone.css" type="text/css" />
     <script src="https://kit.fontawesome.com/ad07d8a7c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <style>
-        .box {
-          background-color: transparent;
-          width: 400px;
-          height: 100px;
-          border: 1px solid transparent;
-          perspective: 1000px;    
-          
-        }
+* {
+    margin: 0;
+    padding: 0;
+  }
 
-        .box-inner {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          margin-left: 10px;
-          text-align: center;
-          transition: transform 2s;
-          transform-style: preserve-3d;
-          
-        }
+body{
+    width: 1080px;
+    height: 1910px;
+    margin: auto;
+}
 
-        .box:hover h2{
-            visibility: hidden;
-        }
 
-        .box:hover .box-inner {
-          transform: rotateY(180deg);
-        }
-        .box-front, .box-back {
-          position: absolute;
-          backface-visibility: hidden;
-        }
-  
-        .box-front {
-          display: flex;
-          background-color: transparent;
-          color: #111111;
-          width: 100%;
-          height: 25%;
+.page{
+    margin: auto;
+    border-color: black;
+    border-style: solid;
+    font-family: sans-serif;
+    background: url(svg/fondentier.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1080px 1910px;     
+              
+}
+
+.infophoto{
+    display: flex;
+    flex-direction: row;
+    width: 1080px;
+    height: 230px;
+    
+}
+
+.contact{
+    display: none;
+}
+
+.photo{
+      
+    width: 350px;
+    height: 300px;
+    float: left;
+    margin-top: -10px;          
+           
+}
+
+
+
+.img{
+    width: 300px;
+     
+}
+
+.martin{
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    
+    }
+
+
+.nom{
+    display: block;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin-top: -60px;
           
-          
-        }
-  
-        .box-back {
-          background-color: transparent;
-          color: #eeeeee;
-          transform: rotateY(180deg);
-          width: 80%;
-          height: 30%;
-        }
-  
-        .fas{
+}
+
+
+
+.adresse{
+    margin-top: -100px;
+    text-align: center;
+        
+}
+
+.info {
+    display: flex;
+    width: 350px;
+    height: 300px;
+    float: right;
+    text-align: center;
             
-            font-size: 30px;
+    
+}
+
+.email{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.titre{
+    
+    height: 100px;
+    display: flex;
+     
+}
+
+.metier{
+    width: 500px;
+    margin-left: 265px;
+    position: absolute;
+    top: 210px;
+    margin-left: 300px;
+    
+}
+
+@keyframes animate {
+    0% {
+    background-position: -500%;
+    }
+    100% {
+    background-position: 500%;
+    }
+}
+
+.cv{
+    display: flex;
+    margin-left: 75px;
+    font-family: Impact, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ee90a0, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    
+    
+}
+
+br{
+    display: none;}
+
+
+.section1{
+    display: flex;
+    width: 1078px;
+    height: 350px;
+    
+}
+
+
+
+.barre{
+    position: absolute;
+    margin-left: 50px;
+    width: 1px;
+    height: 250px;
+    background: red;
+    margin-top: 50px;
+    opacity: 1;  
+}
+   
+.barre2{
+    position: absolute;
+    margin-left: 50px;
+    width: 1px;
+    height: 280px;
+    background: red;
+    margin-top: 30px;
+    opacity: 1;     
+}
+    
+.colgauche{
+    
+    width: 540px;
+    height: 350px;
+    margin-left: -5px;   
+        
+}
+
+
+.coldroite{
+    width: 540px;
+    height: 350px;
+    
+    margin-right: 5px;
+      
+    
+}
+
+
+.section2{
+    display: flex;
+    width: 1078px;
+    height: 350px;
+    margin-left: -2px;
+    
+}
+
+.colgauche2{
+    width: 540px;
+    height: 350px;
+    
+        
+}
+
+.coldroite2{
+    width: 540px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.b{
+    border: 1px solid black;
+}
+.colgauche .experience{
+    width: 100%;
+    height: 100%;
+    margin-top: -25px;
+}
+
+.competences{
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.formation{
+    width: 90%;
+    height: 90%;
+    margin-left: -20px;
+}
+
+.hobbies{
+    margin-left: 5px;
+    width: 70%;
+    height: 70%;
+}
+
+.langues{
+    width: 65%;
+    height: 65%;
+    margin-left: 35px;
+}
+
+.dernierbloc{
+    width: 1080px;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.texte{
+    height: 90%;
+    width: 90%;
+    margin-block-start: 20px;
+}
+
+.section1 .colgauche .txtexp{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: -240px;
+    margin-left: 30px;  
+}
+
+
+.section2 .colgauche2 .txtform{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: -210px;
+    margin-left: 30px;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+@media all and (max-width: 768px){
+    body {
+        
+        display: block;
+        width: 699px;
+        height: 1100px;
+              
+        }
+    }
+
+    @media all and (max-width: 768px) {
+    
+        .page {
+        display: block;
+        flex-direction: column;
+        border-color: transparent;
+        width: 699px;
+        height: 1100px;
+        background: url(svg/fondentier.svg);
+        background-repeat: no-repeat;         
+            
+        }
+
+        .contact{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            margin-left: 300px;
+            margin-top: 100px;
+            letter-spacing: 15px;
+            
+    }
+
+        .contact a{
+            color: black;
+            font-size: xx-large;
+        }
+
+            .email{
+        display: none;
+        }
+
+        .infophoto {
+            
+            display: flex;
+            width: 699px;
+            height: 180px;
+            margin: auto;
+            
+                  
+            }
+
+            .photo{
+            display: flex;    
+            width: 220px;
+            height: 180px;
+            align-items: center;
+        
+            }
+
+            .img {
+                display: flex;
+                width: auto;
+                margin: auto;
+                
+                     
+                
+            }
+
+            .nom {
+                display: flex;
+                height: 180px;
+                width: 80%;
+                margin-top: -20px;        
+                    
+            }   
+ 
+            .adresse{
+            
+            display: none;
+            }
+       
+                .info{
+                    display: none;
+                }
+     
+                .titre{
+                    position:absolute;
+                    display: flex;
+                    margin-top: -200px;
+                    margin-left: -200px;
+                    
+                }
+                
+                .titre .metier{
+                    display: block;
+                    align-items: center;                   
+                }
+
+                .cv{
+                    display: none;
+                }
+            
+
+            .barre{
+                display: flex;
+                height: 220px;
+                margin-top: 160px;
+                opacity: 0.7;
+            }
+        
+            .barre2{
+                display: flex;
+                height: 280px;
+                margin-top: 110px;
+                opacity: 0.7;
+
+            }
+        
+ 
+        .colgauche{
+            width: 50%;
+            margin-top: 100px;
+        }
+        
+
+        .txtexp{
+            display: flex;
+            margin-left: -290px;
+            margin-top: 70px;
+            font-size: 80%;
+        
+    }
+
+        .txtform{
+                position: absolute;
+                display: flex;
+                margin-left: 10px;
+                margin-top: -150px;
+                font-size: 80%;  
+            }
+
+            .section2{
+                display: flex;
+                flex-direction: column;
+                width: 410px;
+            }
+
+            .experience{
+                display: flex;
+                max-width: 60%;
+                margin-left: 30px;
+                margin-top: -100px;     
+                
+            }
+
+            .formation{
+                display: flex;
+                max-width: 60%;
+                margin-left: 10px;
+                margin-top: 80px;
+            }
+
+            .competences{
+                display: flex;
+                width: 60%;
+                margin-top: 150px;
+                margin-left: -180px;
+                               
+            }
+
+            .hobbies{
+                position: absolute;
+                display: flex;
+                width: 40%;
+                margin-top: -550px;
+                margin-left: 350px;
+            }
+
+            .langues{
+                position: absolute;
+                display: flex;
+                width: 40%;
+                margin-top: -370px;
+                margin-left: 350px;
+            }
+
+            .dernierbloc{
+                width: 100%;
+                margin-top: 30px;
+            }
+
+        }
+
+
+        * {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        
+        display: block;
+        width: 480px;
+        height: 1100px;
+              
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+        .page {
+        position: relative;
+        display: block;
+        flex-direction: column;
+        border-color: transparent;
+        width: auto;
+        height: auto;
+        background-image: url(./SVG/fondentier.svg);
+        background-size: 100% 100%;
                   
         }
-  
-        h1,h2,h3,h4,h5{
+
+        
+        .contact{
             position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin-left: 350px;
+            margin-top: 40px;
+            
+                }
+          
+        .contact a{
             color: black;
-            text-transform: uppercase;
-            margin-left: 100px;
-            font-size: 25px;
+            margin-bottom: 10px;
+            font-size: x-large;
+            margin-left: 50px;
+            
+        }  
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .infophoto {
+            
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: 180px;     
+                  
+            }
+        
         }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   
+            .photo{
+            display: flex;    
+            width: auto;
+            }
+        
+        }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+            .img {
+                display: flex;
+                width: 50%;
+           
+            }
+        }
+    
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+            .nom {
+                display: block;
+                height: 180px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;        
+                    
+            }   
+        
+        }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+            .adresse{
+            
+            display: none;
+            }
+            
+            }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                .info{
+                    display: none;
+                }
+            }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .titre{
+            width: 70%;
+            height: 100px;
+            margin-top: -140px;
+            margin-left: -250px;           
+        }
+        
+        .metier{
+            width: 350px;
+            margin-left: 315px;
+            position: absolute;
+            display: flex;
+            
+            
+        }
+
+                .cv{
+                    display: none;
+                }
+
+            }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+                .section1{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 410px;
+                    
+                }
+            
+                .barre{
+                    display: flex;
+                    height: 180px;
+                    margin-top: 130px;
+                    opacity: 0.7;
+                }
+            
+                .barre2{
+                    display: flex;
+                    height: 180px;
+                    margin-top: 60px;
+                    opacity: 0.7;
+
+                }
+            }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            
+            .section1 .colgauche .txtexp{
+                display: inline;
+                margin-left: -350px;
+                margin-top: 50px;
+                font-size: 80%;
+            
+        }
+                     
+            }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+                .section2{
+                    display: flex;
+                    flex-direction: column;
+                    width: 410px;
+                }
+
+                .experience{
+                    display: flex;
+                    max-width: 80%;
+                    margin-left: 40px;     
+                    
+                }
+
+                .formation{
+                    display: flex;
+                    max-width: 50%;
+                    margin-left: 100px;
+                    margin-top: 15px;
+                }
+
+                .competences{
+                    display: flex;
+                    width: 70%;
+                    margin-top: 240px;
+                    margin-left: 35px;
+                   
+                    
+                }
+            
+            }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .colgauche{
+            position: relative;
+            width: auto;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+    }
+    
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .coldroite{
+            width: auto;
+
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .colgauche2{
+            width: 110%;
+            position: relative;
+            display: flex;
+            margin-top: -30px;
+            margin-left: 0px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .coldroite2{
+            position: relative;
+            width: auto;
+        }
+    }
+
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+                    .hobbies{
+                        display: none;
+                     }
+                    
+                    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+                        .langues{
+                            display: none;
+                         }
+                        
+                    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+                    .dernierbloc{
+                            display: none;
+                            width: 99%;
+                                                        
+                    }
+
+                                  
+                   
+
+                    br{
+                        display: inline;}
+
+                    nav{
+                        display: flex;
+                    }
+
+                    .txtform{
+                        display: flex;
+                        margin-top: 100px;
+                        margin-left: 30px;
+                        writing-mode: vertical-lr;
+                        text-orientation: upright;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                                        }
+                }                 
+    
+                
+                
+
       </style>
   
 </head>
@@ -85,7 +784,7 @@
         <div class="contact">
             <a href="mailto:martin@johnson.com"><i class="fas fa-envelope"></i></a>
             <a href="gamebymartin.com" target="_blank"><i class="fas fa-at"></i></a>
-            <a href="tel:+33700000000"><i class="fas fa-phone-square-alt"></i></a>
+            <a href="tel:+33768000000"><i class="fas fa-phone-square-alt"></i></a>
         </div>
     
 <!-- une div infophoto avec à l'intérieur 3 div : gauche photo - milieu nom et adresse - droite email-->        
@@ -102,7 +801,7 @@
             <div class="nom">
                 <a href=""></a>
                <img class="martin" 
-                src="nom.svg" alt="nom"
+                src="svg/nom.svg" alt="nom"
                 /> 
                 <p class="adresse">
                 25 rue des mésanges <br/>
@@ -150,7 +849,7 @@
 
             <div class="colgauche">
                 <img class="experience"
-                src="experience.svg" alt="exp">
+                src="svg/experience.svg" alt="exp">
                 <p class="txtexp"> experiences </p>
 
 
@@ -162,7 +861,7 @@
             <div class="coldroite">
 
                 <img class="competences"
-                src="competences.svg" alt="comp">
+                src="svg/competences.svg" alt="comp">
                 
             </div>
 
@@ -173,21 +872,21 @@
         <div class="section2">
             <!-- barre verticale test-->
             <hr class="barre2">
-
+            <p class="txtform"> formation </p>
             <div class="colgauche2">
                 <img class="formation"
-                src="formation.svg" alt="for">
-                <p class="txtform"> formation </p>
+                src="svg/formation.svg" alt="for">
+                
 
             </div>
 
             <div class="coldroite2">
                 
                 <img class="hobbies"
-                src="hobbies.svg" alt="hob">
+                src="svg/hobbies.svg" alt="hob">
                 
                 <img class="langues"
-                src="langues.svg" alt="lng">
+                src="svg/langues.svg" alt="lng">
 
             </div>
 
@@ -197,14 +896,14 @@
 
         <div class="dernierbloc">
             <img class="texte"
-                src="texte.svg" alt="txt">
+                src="svg/texte.svg" alt="txt">
             
 
         </div>
     
         </div>        
-    </div>
+    
 
-<script src="panneau.js"></script>
+
 </body>
 </html>
